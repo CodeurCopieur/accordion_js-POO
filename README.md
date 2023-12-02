@@ -1,1 +1,1 @@
-# accordion_js-POO
+# Accordion JS POO
