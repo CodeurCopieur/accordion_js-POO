@@ -25,8 +25,6 @@ class controlPanels {
 
 const toggleAccordion = function (elt) {
 
-  console.log(elt);
-
   let parent = elt.parentElement
   const header = parent.querySelector('.stl_accordion-header')
   const content = parent.querySelector('.stl_accordion-content')
@@ -50,7 +48,6 @@ addEventListener('load', function () {
 
   const items = document.querySelectorAll(".stl_accordion[role=tablist]");
 
-  console.log(items);
   items.forEach(item => {
       const allItems = Array.from(item.querySelectorAll('.stl_accordion-header'))
       const panels = new controlPanels(allItems)
